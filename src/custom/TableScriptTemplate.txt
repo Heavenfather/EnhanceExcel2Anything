@@ -1,0 +1,15 @@
+﻿/*
+ * Generate by EnhanceExcel2Anything,don't modify it!
+ * Date: $LastModifyDate$
+ * From: $SourceTable$
+*/
+
+namespace EnhanceExcel2Anything
+{
+    $Usings$
+    public readonly struct $TableName$
+    {
+        $Filed$
+        $Constructor$
+    }
+}

@@ -1,0 +1,51 @@
+﻿/*
+ * Generate by EnhanceExcel2Anything,don't modify it!
+ * Date: $LastModifyDate$
+ * From: $SourceTable$
+*/
+
+namespace EnhanceExcel2Anything
+{
+    $Usings$
+
+    public partial class $TableName$DB : ConfigBase
+    {
+        private $TableName$[] _data;
+        $UniqueMap$
+        
+        protected override void ConstructConfig()
+        {
+            _data = new $TableName$[]
+            {
+$ConstructData$
+            };
+            
+            MakeIdToIdx();
+        }
+        
+        public ref readonly $TableName$ this[$UniqueType$ $UniqueFieldName$]
+        {
+            get
+            {
+                TackUsage();
+                $UniqueGet$
+                return ref _data[idx];
+            }
+        }
+        
+        public $TableName$[] All => _data;
+        
+        public int Count => _data.Length;
+        
+        public override void Dispose()
+        {
+            _data = null;
+            OnDispose();
+        }
+        
+        private void MakeIdToIdx()
+        {
+            $UniqueMethod$
+        }
+    }
+}

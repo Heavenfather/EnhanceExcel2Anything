@@ -1,0 +1,13 @@
+﻿/*
+ * Generate by EnhanceExcel2Anything,don't modify it!
+*/
+
+namespace EnhanceExcel2Anything
+{
+    $Usings$
+    public $AttributeType$ $AttributeName$
+    {
+        $Fields$
+        $Constructor$
+    }
+}

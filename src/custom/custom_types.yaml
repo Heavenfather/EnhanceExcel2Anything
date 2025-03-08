@@ -1,0 +1,56 @@
+# 自定义类型定义规范
+Vector2:
+  type: struct
+  fields:
+    x: float
+    y: float
+  default:
+    x: 0
+    y: 0
+  ignore: true
+    
+Vector3:
+  type: struct
+  fields:
+    x: float
+    y: float
+    z: float
+  default:
+    x: 0
+    y: 0
+    z: 0
+  ignore: true
+
+Vector4:
+  type: struct
+  fields:
+    x: float
+    y: float
+    z: float
+    w: float
+  default:
+    x: 0
+    y: 0
+    z: 0
+    w: 0
+  ignore: true
+  
+AttributeData:
+  type: struct
+  fields:
+    id: int
+    value: long
+
+ItemType:
+  type: enum
+  fields:
+    - WEAPON
+    - ARMOR
+    - POTION
+
+CharacterClass:
+  type: class
+  fields:
+    id: int
+    base_stats: list<float>
+    model_path: string
